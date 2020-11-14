@@ -1,0 +1,15 @@
+<div class="form-group">
+  <label>{{ label }}</label>
+
+  <input 
+    [formControl]="control" 
+    type="text" 
+    class="form-control"
+    [ngClass]="{ 'is-danger': showErrors() }"
+  >
+
+  <ng-container *ngIf="showErrors()">
+    <p *ngIf="control.errors.required" class="text-danger">Wypełnij pole</p>
+    <p *ngIf="control.errors.pattern" class="text-danger">Podaj liczbę</p>
+  </ng-container>
+</div>
