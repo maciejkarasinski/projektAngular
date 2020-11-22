@@ -5,7 +5,6 @@ Prosta aplikacja typu SPA (Single Page Application) wykorzystująca framework fr
 * [Informacje ogólne](#informacje-ogólne)
 * [Technologie](#technologie)
 * [Funkcjonalności](#funkcjonalności)
-* [Baza danych](#baza-danych)
 * [Zrzuty ekranu](#zrzuty-ekranu)
 * [Konfiguracja projektu](#konfiguracja-projektu)
 * [Opis kodu](#opis-kodu)
