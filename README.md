@@ -30,7 +30,7 @@ S
   <img src="./screens/widok.png" />
 </p>
 
-* Formularz, do dodawania produktów   
+* Formularz do dodawania produktów   
 <p align="center">
   <img src="./screens/dodawanie.png" />
 </p>
@@ -40,6 +40,10 @@ S
   <img src="./screens/dodano.png" />
 </p>
 
+* Edycja produktu   
+<p align="center">
+  <img src="./screens/edycja.png" />
+</p>
 
 * Sortowanie po cenie, rosnąco  
 <p align="center">
