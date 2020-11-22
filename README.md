@@ -61,10 +61,23 @@ Po jednym kliknięciu w dany przycisk produkty zostaną posortowane rosnąco, po
 Aplikację można zobaczyć online, pod linkiem: https://angular-project-zaj.vercel.app/
 
 Aby uruchomić projekt lokalnie należy:
-* Wypakować przesłane archiwum / pobrać archiwum z repozytorium na github / sklonować repozytorium: git clone <nazwa
+* Wypakować przesłane archiwum / pobrać archiwum z repozytorium na github / sklonować repozytorium: git clone https://github.com/maciejkarasinski/projektAngular.git
+* Uruchomić konsolę systemową w folderze projektu
+* Wpisać komendę npm install (wymagane posiadanie Node JS na komputerze)
+* Po instalacji wpisać komendę npm start
+* Po uruchomieniu projektu przejść do przeglądarki na stronę: http://localhost:4200/
 
 ## Opis kodu
-* in
+Ponieważ jest to aplikacja napisana w Angularze, każdy komponent składa się z 2 głównych plików <nazwa>.ts i <nazwa>.html. Pliki typescript odpowiadają za funkcjonalność komponentu, natomiast pliki .html odpowiadają za wygląd.
+
+* Komponent app - główny komponent aplikacji, łączy działanie pozostałych komponentów, wywołuje potrzebne funkcje
+* data.service.ts - serwis odpowiedzialny za wszelkie operacje związane z danymi w aplikacji. Zaimplementowane są tu funkcje do dodawania, usuwania, edycji, sortowania, odczytu produktów. Produkty są magazynowane w tabeli. Serwis odpowiada również za zapisywanie/pobieranie danych z localStorage przeglądarki.
+* Komponent item-list Odpowiada za wyświetlanie listy wszystkich produktów, korzystając z data.service. Odpowiada również za wybranie odpowiedniego produktu, do edycji/usunięcia, za pomocą przypisanego id.
+* Komponenty add i edit odpowiadają za funkcjonowanie formularzy do dodawania/edycji produktów. Wykorzystano reaktywne formularze Angulara.
+* Komponent form-input odpowiada za wyświetlanie, działanie, walidację pojedynczego pola w formularzu (input + label + errorMessage).
+* Item.ts - zaimplementowany interfejs obiektu Item (możliwości typescript - aby unikać błędów przy pisaniu kodu)
+* app.module.ts Moduł angulara, który umożliwia współdziałanie komponentów
+
 
 ## Link do projektu
 Projekt znajduje się pod linkiem https://angular-project-zaj.vercel.app/
