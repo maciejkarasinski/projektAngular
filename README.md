@@ -1,5 +1,5 @@
-# projektPHP
-System do raportowania emisji utworów muzycznych
+# projekt Angular
+Prosta aplikacja typu SPA (Single Page Application) wykorzystująca framework front-endowy Angular
 
 ## Table of contents
 * [Informacje ogólne](#informacje-ogólne)
@@ -12,17 +12,22 @@ System do raportowania emisji utworów muzycznych
 * [Link do projektu](#link-do-projektu)
 
 ## Informacje ogólne
-Projekt PHP z przedmiotu Zaawansowane Aplikacje Internetowe - Okno PW. Autor: Maciej Karasiński
+Projekt 2 (Javascript) z przedmiotu Zaawansowane Aplikacje Internetowe - Okno PW. Autor: Maciej Karasiński
 
 ## Technologie
 * Angular 
 * Bootstrap
 
 ## Funkcjonalności
-* są
+* możliwość dodawania, edycji, usuwania produktów z listy,
+* aplikacja działa wyłącznie po stronie przeglądarki,
+* przykładowe produkty po uruchomieniu aplikacji (3),
+* wykorzystanie komponentów do renderowania produktów,
+* możliwość sortowania produktów po cenie, nazwie, opisie
+* wykorzystanie localStorage do zapisania danych w podręcznej pamięci przeglądarki
 
 ## Frameworki
-S
+W projekcie wykorzystałem framework Angular 9, oraz Bootstrap 4. Angular jest powszechnie wykorzystywany w dużych, skomplikowanych projektach (np. system bankowy). Dzieje się tak ponieważ, wymusza dobre praktyki na programiście (m. in. typowanie zmiennych) i projekty są łatwiejsze w utrzymaniu. Posiada natomiast wysoki próg wejścia dla początkującego programisty. Do tak małego projektu łatwiej byłoby wykorzystać Vue Js, albo React JS. Wybrałem Angular, ponieważ chciałem się go nauczyć/potrenować. Bootstrap jest najpopularniejszym frameworkiem CSS. Udostępnia gotowe klasy, aby szybciej można było tworzyć interfejs użytkownika.
 
 ## Zrzuty ekranu   
 * Domyślny widok aplikacji   
@@ -40,12 +45,14 @@ S
   <img src="./screens/dodano.png" />
 </p>
 
-* Edycja produktu   
+* Edycja produktu
+Aby edytować produkt, należy go wybrać, klikając lewym przyciskiem, następnie wybierając przycisk edycji. Usuwanie odbywa się podobnie, tylko pomijając uzupełnianie formularza.
 <p align="center">
   <img src="./screens/edycja.png" />
 </p>
 
-* Sortowanie po cenie, rosnąco  
+* Sortowanie po cenie, rosnąco
+Po jednym kliknięciu w dany przycisk produkty zostaną posortowane rosnąco, po kolejnym malejąco.
 <p align="center">
   <img src="./screens/sortowanie.png" />
 </p>
