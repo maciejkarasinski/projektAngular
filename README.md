@@ -38,4 +38,4 @@ Dos
 * in
 
 ## Link do projektu
-Projekt znajduje się pod linkiem 
+Projekt znajduje się pod linkiem https://angular-project-zaj.vercel.app/
