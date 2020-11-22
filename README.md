@@ -78,6 +78,7 @@ Ponieważ jest to aplikacja napisana w Angularze, każdy komponent składa się 
 * Item.ts - zaimplementowany interfejs obiektu Item (możliwości typescript - aby unikać błędów przy pisaniu kodu)
 * app.module.ts Moduł angulara, który umożliwia współdziałanie komponentów
 
+Komponenty komunikują się pomiędzy sobą za pomocą @Input, @Output, serwisu
 
 ## Link do projektu
 Projekt znajduje się pod linkiem https://angular-project-zaj.vercel.app/
