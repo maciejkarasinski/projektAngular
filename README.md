@@ -25,10 +25,25 @@ Projekt PHP z przedmiotu Zaawansowane Aplikacje Internetowe - Okno PW. Autor: Ma
 S
 
 ## Zrzuty ekranu   
-* Wi   
-Nie
+* Domyślny widok aplikacji   
 <p align="center">
-  <img src="./img/niezalogowany.png" />
+  <img src="./screens/widok.png" />
+</p>
+
+* Formularz, do dodawania produktów   
+<p align="center">
+  <img src="./screens/dodawanie.png" />
+</p>
+
+* Po dodaniu produktu   
+<p align="center">
+  <img src="./screens/dodano.png" />
+</p>
+
+
+* Sortowanie po cenie, rosnąco  
+<p align="center">
+  <img src="./screens/sortowanie.png" />
 </p>
 
 ## Konfiguracja projektu
