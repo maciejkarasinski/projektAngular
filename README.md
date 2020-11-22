@@ -58,7 +58,10 @@ Po jednym kliknięciu w dany przycisk produkty zostaną posortowane rosnąco, po
 </p>
 
 ## Konfiguracja projektu
-Dos
+Aplikację można zobaczyć online, pod linkiem: https://angular-project-zaj.vercel.app/
+
+Aby uruchomić projekt lokalnie należy:
+* Wypakować przesłane archiwum / pobrać archiwum z repozytorium na github / sklonować repozytorium: git clone <nazwa
 
 ## Opis kodu
 * in
