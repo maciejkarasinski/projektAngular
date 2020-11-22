@@ -24,6 +24,7 @@ Projekt 2 (Javascript) z przedmiotu Zaawansowane Aplikacje Internetowe - Okno PW
 * wykorzystanie komponentów do renderowania produktów,
 * możliwość sortowania produktów po cenie, nazwie, opisie
 * wykorzystanie localStorage do zapisania danych w podręcznej pamięci przeglądarki
+* brakuje filtrowania
 
 ## Frameworki
 W projekcie wykorzystałem framework Angular 9, oraz Bootstrap 4. Angular jest powszechnie wykorzystywany w dużych, skomplikowanych projektach (np. system bankowy). Dzieje się tak ponieważ, wymusza dobre praktyki na programiście (m. in. typowanie zmiennych) i projekty są łatwiejsze w utrzymaniu. Posiada natomiast wysoki próg wejścia dla początkującego programisty. Do tak małego projektu łatwiej byłoby wykorzystać Vue Js, albo React JS. Wybrałem Angular, ponieważ chciałem się go nauczyć/potrenować. Bootstrap jest najpopularniejszym frameworkiem CSS. Udostępnia gotowe klasy, aby szybciej można było tworzyć interfejs użytkownika.
