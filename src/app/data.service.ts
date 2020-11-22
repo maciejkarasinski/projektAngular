@@ -12,13 +12,38 @@ export class DataService {
     {name: 'Jabłka', description: 'Jabłka prosto z sadu', imgLink: 'https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80', price: 10},
   ];
 
+  private activeItemId: number | null = null;
+
   constructor() { }
+
+  public getItemId(): number | null {
+    return this.activeItemId;
+  }
+
+  public setItemId(id: number | null): void {
+    this.activeItemId = id;
+  }
 
   public getItems(): Item[] {
     return this.items;
   }
 
+  public getItem(id: number): Item {
+    return this.items[id];
+  }
+
   public addItem(item: Item): void {
     this.items.push(item);
+  }
+
+  public updateItem(id: number, item: Item): void {
+    this.items[id].name = item.name;
+    this.items[id].description = item.description;
+    this.items[id].imgLink = item.imgLink;
+    this.items[id].price = item.price;
+  }
+
+  public removeItem(id: number): void {
+    this.items.splice(id, 1);
   }
 }

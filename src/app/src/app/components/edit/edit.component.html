@@ -1,0 +1,18 @@
+<div class="container mt-5">
+  <h3 class="text-center">Edytuj produkt</h3>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <app-form-input label="Nazwa" [control]="form.get('name')"></app-form-input>
+    <app-form-input label="Opis" [control]="form.get('description')"></app-form-input>
+    <app-form-input label="Link do obrazka" [control]="form.get('imgLink')"></app-form-input>
+    <app-form-input label="Cena" [control]="form.get('price')"></app-form-input>
+    <div class="text-center mt-4">
+      <button 
+        type="button" 
+        class="btn btn-outline-success mr-4" 
+        (click)="onSubmit()" 
+        [disabled]="form.invalid"
+      >Zapisz zmiany</button>
+      <button type="button" class="btn btn-outline-danger" (click)="onCancel()">Anuluj</button>
+    </div> 
+  </form>
+</div>

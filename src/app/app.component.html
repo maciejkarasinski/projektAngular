@@ -2,21 +2,22 @@
   <h1>Sklep z owocami</h1>
   <div class="row">
     <div class="col-12 col-sm-8 col-lg-8">
-      <app-item-list></app-item-list>
+      <app-item-list (activeItemIdOutput)="activeId($event)"></app-item-list>
     </div>
     <div class="col-12 col-sm-8 col-lg-4">
       <div class="d-flex flex-row container justify-content-center">
-        <button type="button" class="btn btn-success mr-3" (click)="toggleForm()">
+        <button type="button" class="btn btn-success mr-3" (click)="toggleForm()" [disabled]="itemActiveId || itemActiveId === 0">
           <img src="assets/img/add.svg" alt="usuń" style="width: 50px;">
         </button>
-        <button type="button" class="btn btn-primary mr-3">
+        <button type="button" class="btn btn-primary mr-3" (click)="toggleFormEdit()" [disabled]="itemActiveId === null">
           <img src="assets/img/pencil.svg" alt="usuń" style="width: 50px;">
         </button>
-        <button type="button" class="btn btn-danger">
+        <button type="button" class="btn btn-danger" [disabled]="itemActiveId === null" (click)="onItemDelete()">
           <img src="assets/img/trash.svg" alt="usuń" style="width: 50px;">
         </button>
       </div>
       <app-add *ngIf="showForm"></app-add>
+      <app-edit *ngIf="showFormEdit" [itemId]="itemActiveId"></app-edit>
     </div>
   </div>
 </div>
