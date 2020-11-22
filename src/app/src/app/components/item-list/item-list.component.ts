@@ -1,5 +1,5 @@
 import { DataService } from '../../../../data.service';
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { Item } from '../../../../util/Item';
 
 @Component({
@@ -7,16 +7,19 @@ import { Item } from '../../../../util/Item';
   templateUrl: './item-list.component.html',
   styleUrls: ['./item-list.component.css']
 })
-export class ItemListComponent implements OnInit {
+export class ItemListComponent implements OnInit, OnChanges {
   @Output() activeItemIdOutput = new EventEmitter<number | null>();
 
   constructor(public dataService: DataService) { }
 
   public items: Item[];
-  public activeItemId: number = null;
+  @Input () public activeItemId: number = null;
 
   ngOnInit(): void {
     this.items = this.dataService.getItems();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
   }
 
   onClickItem(i: number | null): void {

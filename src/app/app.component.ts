@@ -15,6 +15,7 @@ export class AppComponent {
 
   toggleForm(): void{
     this.showForm = !this.showForm;
+    this.itemActiveId = null;
   }
 
   toggleFormEdit(): void{
@@ -23,10 +24,27 @@ export class AppComponent {
 
   activeId(event: number | null): void {
     this.itemActiveId = event;
-    console.log(this.itemActiveId);
   }
 
   onItemDelete(): void {
     this.dataService.removeItem(this.itemActiveId);
+    this.itemActiveId = null;
+  }
+
+  OnEditFormClose(): void {
+    this.showFormEdit = false;
+    this.itemActiveId = null;
+  }
+
+  sortDescription(): void {
+    this.dataService.sortItems('description');
+  }
+
+  sortName(): void {
+    this.dataService.sortItems('name');
+  }
+
+  sortPrice(): void {
+    this.dataService.sortItems('price');
   }
 }
