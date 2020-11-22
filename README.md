@@ -38,4 +38,4 @@ Dos
 * in
 
 ## Link do projektu
-Projekt znajduje się pod linkiem https://php-projekt.herokuapp.com/index.php
+Projekt znajduje się pod linkiem 
